@@ -1,0 +1,23 @@
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+
+const port = @@PORT@@;
+
+@@CORS@@
+
+app.options("*", (req, res) => {
+    res.end();
+})
+
+@@GET@@
+
+@@POST@@
+
+@@PUT@@
+
+@@DELETE@@
+
+app.listen(port, ()=>{
+    console.log(`listening on port ${port}`)
+})
